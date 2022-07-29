@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+import mongoose from "mongoose";
 
 exports.connectDb =async () => {
     mongoose.Promise = global.Promise;

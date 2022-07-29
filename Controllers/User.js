@@ -1,6 +1,6 @@
-const User = require("../Models/Users")
-const { createCustomError } = require("../Errors/custom-error")
-const statusCode = require("../Errors/error-helper")
+import User from "../Models/Users"
+import { createCustomError } from "../Errors/custom-error"
+import statusCode from "../Errors/error-helper"
 
 exports.register = async(req,res, next)=>{
     const param = { ...req.body, ...req.query, ...req.params }
