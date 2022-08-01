@@ -6,4 +6,5 @@ package-lock.json
 
 DS_Store
 
-*.log
+error.log
+combined.log
